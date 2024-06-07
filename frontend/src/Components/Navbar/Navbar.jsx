@@ -3,6 +3,7 @@ import './Navbar.css';
 
 import logo from '../Assets/logo.png';
 import car_icon from '../Assets/cart_icon.png';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [menu, setMenu] = useState("shop");
@@ -10,18 +11,18 @@ export const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="nav-logo">
-                <img src={logo} alt="Logo" />
-                <p>Sober</p>
+                <Link style={{textDecoration:'none'}} to='/'><img src={logo} alt="Logo" /></Link>
+                <Link style={{textDecoration:'none'}} to='/'><p>Sober</p></Link>
             </div>
             <ul className="nav-menu">
-                <li onClick={() => { setMenu("shop") }}>Shop{menu === "shop" ? <hr /> : <></>}</li>
-                <li onClick={() => { setMenu("men") }}>Men{menu === "men" ? <hr /> : <></>}</li>
-                <li onClick={() => { setMenu("women") }}>Women{menu === "women" ? <hr /> : <></>}</li>
-                <li onClick={() => { setMenu("kid") }}>Kids{menu === "kid" ? <hr /> : <></>}</li>
+                <li onClick={() => { setMenu("shop") }}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
+                <li onClick={() => { setMenu("mens") }}><Link style={{textDecoration:'none'}} to='/mens'>Men</Link>{menu === "mens" ? <hr /> : <></>}</li>
+                <li onClick={() => { setMenu("womens") }}><Link style={{textDecoration:'none'}} to='/womens'>Women</Link>{menu === "womens" ? <hr /> : <></>}</li>
+                <li onClick={() => { setMenu("kids") }}><Link style={{textDecoration:'none'}} to='/kids'>Kids</Link>{menu === "kids" ? <hr /> : <></>}</li>
             </ul>
             <div className="nav-login-cart">
-                <button>Login</button>
-                <img src={car_icon} alt="Cart Icon" />
+                <Link style={{textDecoration:'none'}} to='/login'><button>Login</button></Link>
+                <Link style={{textDecoration:'none'}} to='/cart'><img src={car_icon} alt="Cart Icon" /></Link>
                 <div className="nav-cart-count">
                     0
                 </div>
