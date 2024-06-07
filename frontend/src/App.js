@@ -7,6 +7,7 @@ import { SoberCategory } from './Pages/SoberCategory';
 import { Product } from './Pages/Product'
 import { Cart } from './Pages/Cart'
 import { Authentication } from './Pages/Authentication'
+import { Footer } from './Components/Footer/Footer';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/login' element={<Authentication />} />
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
