@@ -7,7 +7,7 @@ export const HomeContext = createContext(null);
 const getDefaultCart = () => {
     let cart = {}; // initially cart will be empty object
     for(let index = 0; index < all_product.length+1; index++){
-        cart[index] = 1;
+        cart[index] = 0;
     }
     return cart;
 }
@@ -20,19 +20,28 @@ const HomeContextProvider = (props) => {
     const addToCart = (itemId) => {
         setCartItems((prev)=>({            
             ...prev,
-            [itemId]: (prev[itemId] || 0) + 1
+            [itemId]: (prev[itemId]) + 1
         }));
-        console.log("id choosed : ", cartItems[itemId])
     }
     const removeFromCart = (itemId)=> {
         setCartItems((prev)=> ({
             ...prev,
             [itemId]: (prev[itemId]) - 1
         }));
-        console.log("Cart items Delete: ", cartItems[itemId])
     }
 
-    const contextValue = {all_product, cartItems, addToCart, removeFromCart};
+    const getTotalCartamount= ()=>{
+        let totalAmount  = 0;
+        for(const item in cartItems){
+            if(cartItems[item] > 0){
+                let itemInfo = all_product.find((product)=> product.id === Number(item))
+                totalAmount += itemInfo.new_price * cartItems[item];
+            }            
+        }
+        return totalAmount;
+    }
+
+    const contextValue = {getTotalCartamount, all_product, cartItems, addToCart, removeFromCart};
 
     return(
         <HomeContext.Provider value={contextValue}>
