@@ -22,18 +22,18 @@ import p21_img from "./product_21.png";
 import p22_img from "./product_22.png";
 import p23_img from "./product_23.png";
 import p24_img from "./product_24.png";
-import p25_img from "./product_25.png";
-import p26_img from "./product_26.png";
-import p27_img from "./product_27.png";
-import p28_img from "./product_28.png";
-import p29_img from "./product_29.png";
-import p30_img from "./product_30.png";
-import p31_img from "./product_31.png";
-import p32_img from "./product_32.png";
-import p33_img from "./product_33.png";
-import p34_img from "./product_34.png";
-import p35_img from "./product_35.png";
-import p36_img from "./product_36.png";
+import p25_img from "./mishan_1.jpg";
+import p26_img from "./mishan_2.jpg";
+import p27_img from "./mishan_3.jpg";
+import p28_img from "./saif_1.jpg";
+import p29_img from "./saif_2.jpg";
+import p30_img from "./taifa_1.jpg";
+import p31_img from "./taifa_2.jpg";
+import p32_img from "./raisha_1.jpg";
+import p33_img from "./eza_1.jpg";
+import p34_img from "./labonno_1.jpg";
+import p35_img from "./taifa_2.jpg";
+import p36_img from "./samiyul_1.jpg";
 
 let all_product = [
   {
