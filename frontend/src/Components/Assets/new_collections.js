@@ -1,10 +1,10 @@
-import p1_img from "./product_12.png";
+import p1_img from "./kochi_2.jpg";
 import p2_img from "./product_35.png";
 import p3_img from "./product_14.png";
 import p4_img from "./product_8.png";
 import p5_img from "./product_15.png";
-import p6_img from "./product_2.jpg";
-import p7_img from "./product_17.png";
+import p6_img from "./kochi_3.jpg";
+import p7_img from "./kochi_4.jpg";
 import p8_img from "./product_28.png";
 
 let new_collections = [
