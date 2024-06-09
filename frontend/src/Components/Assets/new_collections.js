@@ -1,11 +1,11 @@
-import p1_img from "./kochi_2.jpg";
-import p2_img from "./new_collection_1.jpg";
-import p3_img from "./Rakib_2.jpg";
-import p4_img from "./Sajib_2.jpg";
-import p5_img from "./Rajib_2.jpg";
-import p6_img from "./kochi_3.jpg";
-import p7_img from "./kochi_4.jpg";
-import p8_img from "./raisha_2.jpg";
+import p1_img from "./Female/female_13.webp";
+import p2_img from "./Female/female_14.png";
+import p3_img from "./Male/male_13.jpeg";
+import p4_img from "./Male/male_14.jpeg";
+import p5_img from "./Male/male_15.jpg";
+import p6_img from "./Female/female_15.jpg";
+import p7_img from "./Female/female_16.webp";
+import p8_img from "./Female/female_16.webp";
 
 let new_collections = [
   {
