@@ -21,7 +21,7 @@ export const Authentication = () => {
         </div>
       </div>
       <div className="adding-space">
-        
+
       </div>
     </div>
   )

@@ -1,66 +1,128 @@
-.authentication{
+.authentication {
+  width: 100%;
+  height: 100%;
+  background: #fce3fe;
+  padding-top: 100px;
+}
+
+.authentication-container {
+  width: 580px;
+  height: 450px;
+  background: white;
+  margin: auto;
+  padding: 40px 60px;
+}
+
+.authentication-container h1 {
+  margin: 20px 0px;
+}
+
+.authentication-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.authentication-fields input {
+  height: 40px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  font-size: 18px;
+}
+
+.authentication-container button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #ff4141;
+  margin-top: 30px;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.authentication-login {
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.authentication-login span {
+  color: #c06767;
+  font-weight: 600;
+}
+
+.authentication-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.adding-space {
+  height: 10px;
+  width: 100%;
+}
+
+@media(max-width:1280px) {
+  .authentication {
+    padding-top: 50px;
+  }
+
+  .authentication-container {
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .authentication-container button{
     width: 100%;
-    height: 100%;
-    background: #fce3fe;
-    padding-top: 100px;
-}
-.authentication-container{
-    width: 580px;
-    height: 450px;
-    background: white;
-    margin: auto;
-    padding: 40px 60px;
-}
-.authentication-container h1{
-    margin: 20px 0px;
-}
-.authentication-fields{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 30px;
-}
-.authentication-fields input{
-    height: 40px;
-    width: 100%;
-    padding-left: 20px;
-    border: 1px solid #c9c9c9;
-    outline: none;
-    font-size: 18px;
-}
-.authentication-container button{
-    width: 100%;
-    height: 50px;
-    color: white;
-    background-color: #ff4141;
-    margin-top: 30px;
-    border: none;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;    
-}
-.authentication-login{
-   margin-top: 20px;
-   color: #5c5c5c; 
-   font-size: 18px;
-   font-weight: 500;
-}
-.authentication-login span{
-    color: #c06767;
-    font-weight: 600;
-}
-.authentication-agree{
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
+  }
+
+  .authentication-fields h1 {
+    margin: 10px 0px;
+  }
+
+  .authentication-fields {
     gap: 20px;
-    color: #5c5c5c;
-    font-size: 18px;
-    font-weight: 500;
-}
-.adding-space{
-    height: 10px;
-    width: 100%;
+    margin-top: 20px;
+  }
+  .authentication-fields input{
+    height: 65px;
+    width: 95%;
+  }
+  .authentication-login{
+    font-size:16px;
+  }
+  .authentication-agree{
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 5px;
+  }
 }
 
-
+@media(max-width:800px){
+  .authentication-container{
+    padding: 20px 30px;
+  }
+  .authentication-container h1{
+    font-size: 24px;
+  }
+  .authentication-fields{
+    margin-top: 20px;
+  }
+  .authentication-fields input{
+    height: 40px;
+  }
+  .authentication-fields button{
+    height: 40px;
+    font-size: 15px;
+  }
+}
