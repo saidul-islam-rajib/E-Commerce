@@ -1,11 +1,11 @@
-import p1_img from "./Female/female_13.webp";
-import p2_img from "./Female/female_14.png";
-import p3_img from "./Male/male_13.jpeg";
-import p4_img from "./Male/male_14.jpeg";
-import p5_img from "./Male/male_15.jpg";
-import p6_img from "./Female/female_15.jpg";
-import p7_img from "./Female/female_16.webp";
-import p8_img from "./Female/female_16.webp";
+import p1_img from "./Female/female_12.webp";
+import p2_img from "./Kid/kid_11.jpg";
+import p3_img from "./Male/male_2.webp";
+import p4_img from "./Female/female_8.jpg";
+import p5_img from "./Male/male_3.webp";
+import p6_img from "./Female/female_2.jpg";
+import p7_img from "./Male/male_5.png";
+import p8_img from "./Kid/kid_4.jpg";
 
 let new_collections = [
   {

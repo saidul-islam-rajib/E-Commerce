@@ -1,7 +1,7 @@
-import p1_img from './Female/female_17.webp';
-import p2_img from './Female/female_18.jpg';
-import p3_img from './Female/female_19.jpg';
-import p4_img from './Female/female_20.jpg';
+import p1_img from './Female/female_1.jpg';
+import p2_img from './Female/female_2.jpg';
+import p3_img from './Female/female_3.jpg';
+import p4_img from './Female/female_4.webp';
 
 export const data_product = [
   {
