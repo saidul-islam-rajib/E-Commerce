@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
   return (
     <div>
-      <p>Removed everything !</p>
+      <Navbar />
     </div>
   )
 }
 
-export default App
+export default App;
