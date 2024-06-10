@@ -13,7 +13,7 @@ app.use(cors());
 
 
 // Databaase connection with MongoDB
-mongoose.connect("mongodb+srv://rajib1997:Rajib9900@cluster0.uevxh21.mongodb.net/first");
+mongoose.connect("mongodb+srv://rajib1997:Rajib9900@cluster0.uevxh21.mongodb.net/eCommerce");
 
 // API creation
 app.get("/", (req, res)=>{
@@ -77,8 +77,17 @@ const Product = mongoose.model("Product",{
   }
 });
 app.post('/addproduct', async (req, res)=>{
+  let products = await Product.find({});
+  let id=1;
+  if(products.length > 0){
+    // get last project
+    let last_product_array = products.slice(-1);
+    let last_product = last_product_array[0]; // we have only one product in `last_product_array`
+    id = last_product.id + 1; // increment `id` to generate new `id` 
+  }
+
   const product = new Product({
-    id: req.body.id,
+    id: id,
     name: req.body.name,
     image: req.body.image,
     category: req.body.category,
@@ -92,6 +101,18 @@ app.post('/addproduct', async (req, res)=>{
     success: true,
     name: req.body.name
   });
+})
+
+// Creating API to delete product
+app.post('/product/delete', async (req, res)=>{
+  await Product.findOneAndDelete({
+    id:req.body.id
+  });
+  console.log("Deleted product with id : "+req.body.id);
+  res.json({
+    success: true,
+    name: req.body.name
+  })
 })
 
 
