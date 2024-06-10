@@ -115,6 +115,13 @@ app.post('/product/delete', async (req, res)=>{
   })
 })
 
+// Creating API to ge list of products
+app.get('/allproducts', async (req, res)=>{
+  let products = await Product.find({});
+  console.log("All product fetched");
+  res.send(products)
+})
+
 
 app.listen(port, (error)=>{
   if(!error){
